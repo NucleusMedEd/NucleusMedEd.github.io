@@ -27,7 +27,7 @@
     		</tr>
     		<tr>
     			<td>
-    				<a data-container:"body" tabindex="0" class="btn btn-default" href="#" role="button" data-toggle="popover" title="Treatment" data-placement="left"data-content="Some content inside the popover" data-trigger="focus">Treatment</a>
+    				<a data-container:"body" tabindex="0" class="btn btn-default" href="#" role="button" data-toggle="popover" title="Treatment" data-placement="left" data-content="Some content inside the popover" data-trigger="focus">Treatment</a>
     			</td>
 
     			<td>	
@@ -40,23 +40,21 @@
 
     		</tr>
     		<tr>
-    			<td><a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-      class="btn"
-      data-content="...">
-    Popover anchor w/ class 'btn'
-  </a></td>
+    			<td></td>
+    			
     			<td>	
-    				<a tabindex="0" class="btn btn-default col-lg-5" role="button" data-placement="bottom"data-toggle="popover" title="Popover Header" data-content="Some content inside the popover" data-trigger="focus">Diagnosis</a>
+    				<a class="btn btn-default col-lg-5" role="button" data-placement="bottom"data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Diagnosis</a>
     			</td>
 
-    			<td><a tabindex="0" role="button" class="btn btn-md btn-danger" 
-      			data-toggle="popover" data-trigger="focus" title="Dismissible popover"
-      			data-content="And here's some amazing content. It's very engaging. Right?">
-  				Dismissible popover</a></td>
+    			<td></td>
     		</tr>
 		</tbody>
     </table>
 
+<script>
+var img = '<img src= image/Varus_Valgus_test.png />';
+$("#VarusValgus").popover({ content: img, html:true, trigger:'hover'});
+</script>
 
 
 
@@ -68,9 +66,13 @@
 
 
 
+
 <script>
 $(document).ready(function(){
-    $('[data-toggle="popover"]').popover(); 
+    $('[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover'
+    });
 });
 </script>
 </body>
