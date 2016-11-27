@@ -27,7 +27,7 @@
     		</tr>
     		<tr>
     			<td>
-    				<a tabindex="0" class="btn btn-default" href="#" role="button" data-toggle="popover" title="Treatment" data-placement="auto left"data-content="Some content inside the popover" data-trigger="focus">Treatment</a>
+    				<a data-container:"body" tabindex="0" class="btn btn-default" href="#" role="button" data-toggle="popover" title="Treatment" data-placement="left"data-content="Some content inside the popover" data-trigger="focus">Treatment</a>
     			</td>
 
     			<td>	
@@ -40,12 +40,16 @@
 
     		</tr>
     		<tr>
-    			<td></td>
+    			<td><a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
+      class="btn"
+      data-content="...">
+    Popover anchor w/ class 'btn'
+  </a></td>
     			<td>	
     				<a tabindex="0" class="btn btn-default col-lg-5" role="button" data-placement="bottom"data-toggle="popover" title="Popover Header" data-content="Some content inside the popover" data-trigger="focus">Diagnosis</a>
     			</td>
 
-    			<td><a tabindex="0" role="button" class="btn btn-lg btn-danger" 
+    			<td><a tabindex="0" role="button" class="btn btn-md btn-danger" 
       			data-toggle="popover" data-trigger="focus" title="Dismissible popover"
       			data-content="And here's some amazing content. It's very engaging. Right?">
   				Dismissible popover</a></td>
