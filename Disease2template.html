@@ -8,6 +8,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="NucleusMedEd.css">
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	
 </head>
 
@@ -36,32 +38,65 @@
 
   </div>
 </div>
+<div class="container">
+<div class="row srchrw">
+		<div>
 
 
-<div class="container container-table">
+<!-- Update the searchblox server location below in the action field-->
+<!-- Change the action to http://localhost:8080/searchblox/plugin/index.html shown below if you want faceted search results -->
+<!-- <form action="http://localhost:8080/searchblox/plugin/index.html" method="get"> -->
+				<form action="http://localhost:8080/searchblox/servlet/SearchServlet" method="get">
+
+<!--To add search parameter use the syntax as in the line below-->
+
+<!--<input type="hidden" name="col" value="2">-->
+
+				<div class="input-group custom-search-form">
+				<input type="text" class="form-control" name="query" value="">
+				<span class="input-group-btn">
+				<button class="btn btn-default srchbtn" type="search">
+				<span class="glyphicon glyphicon-search "></span>
+				</button>
+				</span>
+
+				</span>
+				</div>
+				</form>
+				</div>
+</div>
+</div>
+
+<div class="container container-table container-fluid">
     <div class="row vertical-center-row">
-        <table class="table no-border">
+	            <table class="table no-border">
     	   <tbody>
     		  <tr>
     			 <td></td>
 
-                 <td width="50%"><button type="button" class="btn btn-default btn-lg text-center" data-toggle="modal" data-target="#myModal">Define</button></td>
+                 <td><button type="button" class="btn btn-default btn-lg text-center btn-block" data-toggle="modal" data-target="#myModal">Define</button></td>
                  
     			 <td></td>
-    		  </tr>
+    		  <tr class="blank_row"><td colspan="3"></td></tr>
+			  <tr class="blank_row"><td colspan="3"></td></tr>
+			  <tr class="blank_row"><td colspan="3"></td></tr>
+    		  
+    		 
 
-    		  <tr >
-    			 <td><button type="button" class="btn btn-default btn-lg text-center" data-toggle="modal" data-target="#myModal">Treatment</button></td>
+    		  <tr>
+    			 <td><button type="button" class="btn btn-default btn-lg text-center btn-block" data-toggle="modal" data-target="#myModal">Treatment</button></td>
 
-                 <td><button type="button" class="btn btn-danger btn-lg text-center" data-toggle="modal" data-target="#myModal"><strong>Disease</strong></button></td>
+                 <td><button type="button" class="btn btn-danger btn-lg text-center btn-block" data-toggle="modal" data-target="#myModal"><strong>Disease</strong></button></td>
                  
-    			 <td><button type="button" class="btn btn-default btn-lg text-center" data-toggle="modal" data-target="#myModal">Signs/Symptoms</button></td>
+    			 <td><button type="button" class="btn btn-default btn-lg text-center btn-block " data-toggle="modal" data-target="#myModal">Signs/Symptoms</button></td>
     		  </tr>
-
+			  <tr class="blank_row"><td colspan="3"></td></tr>
+			  <tr class="blank_row"><td colspan="3"></td></tr>
+			  <tr class="blank_row"><td colspan="3"></td></tr>
     		  <tr>
     			 <td></td>
 
-                 <td><button type="button" class="btn btn-default btn-lg text-center" data-toggle="modal" data-target="#myModal">Diagnosis</button></td>
+                 <td><button type="button" class="btn btn-default btn-lg text-center btn-block" data-toggle="modal" data-target="#myModal">Diagnosis</button></td>
                  
     			 <td></td>
     		  </tr>
@@ -70,25 +105,18 @@
      </div>
 </div>
 
-<div class="container container-table">
-    <div class="row vertical-center-row">
-					<ul>
-						<li><a href=“”>Anterior (ACL) & Posterior (PCL) Drawer Test</a>
-						<li><a href=“”>Bounce Home Test</a>
-						<li><a href=“”>Apley's Compression and Distraction Tests</a>
-						<li><a href=“”>Lachman's Test (ACL)</a>
-						<li><a href=“”>McMurray's Test (Meniscii)</a>
-						<li><a href=“”>Patellar Grind Test</a>
-						<li><a href="../image/Varus_Valgus_test.png" id="VarusValgus">Valgus and Varus Stress Test</a>
-					</ul>
+<a href="../image/Varus_Valgus_test.png" id="VarusValgus">test link for popover</a>
+
 						<script>
 						var img = '<img src= image/Varus_Valgus_test.png />';
 
 						$("#VarusValgus").popover({ content: img, html:true, trigger:'hover'});
 						</script>
-     </div>
-</div>
 
+
+ <footer class="container">
+		 <a href="index.html" class="btn btn-link">Home</a>
+ </footer>
 
 
 <script>

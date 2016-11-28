@@ -29,6 +29,25 @@ td .btn {
 	width: 165px;
 }
 
+.srchbtn {
+	width: 35px;
+}
+
   .midrw {
   	padding: 60px;
   }
+  
+  <! this is for the center row with the red disease button-->
+  .blank_row
+{
+    height: 10px !important; /* Overwrite any previous rules */
+    background-color: #FFFFFF;
+}
+  
+  .srchrw {
+	  padding-top: 10px;
+	  padding-bottom: 60px;
+  }
+  
+  .custom-search-form{
+margin-top:5px;
