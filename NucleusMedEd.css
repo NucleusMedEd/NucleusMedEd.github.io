@@ -15,4 +15,12 @@
   border-width: 0;
 }
 
-table { empty-cells: show; }
+.table { empty-cells: show; 
+		
+}
+
+td .btn {
+	horizontal-align: middle;
+	display: block;
+	margin:auto;
+}
