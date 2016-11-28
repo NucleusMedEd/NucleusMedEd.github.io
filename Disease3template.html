@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Disease Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="NucleusMedEd.css">
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+ 
+</head>
+<body>
+
+
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>relevant information.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container container-table">
+	<div class="row srchrw">
+		<div class="col-lg-3">
+
+
+<!-- Update the searchblox server location below in the action field-->
+<!-- Change the action to http://localhost:8080/searchblox/plugin/index.html shown below if you want faceted search results -->
+<!-- <form action="http://localhost:8080/searchblox/plugin/index.html" method="get"> -->
+				<form action="http://localhost:8080/searchblox/servlet/SearchServlet" method="get">
+
+<!--To add search parameter use the syntax as in the line below-->
+
+<!--<input type="hidden" name="col" value="2">-->
+
+				<div class="input-group custom-search-form">
+				<input type="text" class="form-control" name="query" value="">
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="search">
+				<span class="glyphicon glyphicon-search"></span>
+				</button>
+				</span>
+
+				</span>
+				</div>
+				</form>
+				</div>
+</div>
+
+   <div class="row">
+	 <div class="col-xs-3"></div>
+      <div class="col-xs-6 text-center"><button type="button" class="btn btn-default btn-lg text-center" data-toggle="modal" data-target="#myModal">Define</button></div>
+      <div class="col-xs-3"></div>
+   </div>
+   
+  <div class="row midrw">
+  		<div class="col-xs-3"><button type="button" class="btn btn-default btn-lg text-center" data-toggle="modal" data-target="#myModal">Treatment</button></div>
+        <div class="col-xs-6 text-center"><button type="button" class="btn btn-danger btn-lg text-center" data-toggle="modal" data-target="#myModal"><strong>Disease</strong></button> </div> 
+    <div class="col-xs-3"><button type="button" class="btn btn-default btn-lg text-center" data-toggle="modal" data-target="#myModal">SIgns/Symptoms</button></div>
+  </div>
+  
+  <div class="row">
+         <div class="col-xs-3"></div>
+         <div class="col-xs-6 text-center"><button type="button" class="btn btn-default btn-lg text-center" data-toggle="modal" data-target="#myModal">Diagnosis</button></div>
+          <div class="col-xs-3"></div>
+  </div>
+</div>
+
+</body>
+</html>

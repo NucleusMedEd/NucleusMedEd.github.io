@@ -15,7 +15,7 @@
   border-width: 0;
 }
 
-.table { empty-cells: show; 
+.table, tr { empty-cells: show; 
 		
 }
 
@@ -24,3 +24,11 @@ td .btn {
 	display: block;
 	margin:auto;
 }
+
+.btn {
+	width: 165px;
+}
+
+  .midrw {
+  	padding: 60px;
+  }
