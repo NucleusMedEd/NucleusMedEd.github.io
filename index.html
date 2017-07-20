@@ -1,83 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
   <title>COMLEX</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/app.css?_=569c7c729990c06af85c1d733c1a4de4" type="text/css" media="screen">
+    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+    
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
   <body>
-  <div class="container"><ul><a href="Disease2template.html" class="btn btn-default" role="button">Disease</a></ul></div>
-  <div><ul><a href="Disease.html" class="btn btn-link" role="button">Disease</a></ul></div>
-  
-  <div class="container">
-    <h1 class="text-muted text-center">COMLEX</h1>
+    <div class="container">
+    
    </div>
-    <Div>
-<UL>
-<LI><a href="">Cardiology</a>
-<LI><a href="">Endocrinology</a>
-<LI><a href="">Gastrointestinal</a>
-<LI><a href="file:///Users/main/Desktop/COMLEX%20bootstrap/GYNECOLOGY.html">Gynecology</a>
-<LI><a href="">Ostetrics</a>
-</UL>
-</div>
+  <main class="container">
+    <form action="/search/" method="post" style="
+    padding-top: 20px;
+    padding-left: 20px;
+">
+    <div class="form-group row no-gutter">
+        <input type="hidden" name="submitted" value="1">
+        <div class="col-6 pr-1">
+            <input type="text" class="form-control" name="keyword" value="" autofocus="">
+        </div>
+        <div class="col-6 pl-0">
+            <input type="submit" name="submit" class="btn btn-primary" value="Search">
+        </div>
+    </div>
+</form>
+    <a href="Disease.html" class="btn btn-link" role="button">Disease</a>
+  
 
-<div>
-<UL>
-<LI><a href="">Immunology</a>
-<LI><a href="">Rheumatology</a>
-<LI><a href="">Infectious Disease</a>
-<LI><a href="">Hematoloy</a>
-<LI><a href="">Oncology</a>
-</UL>
-
-<div>
-<UL>
-<LI><a href="">Nephrology</a>
-<LI><a href="">Urology</a>
-<LI><a href="Pediatrics.html">Pediatrics</a>
-<LI><a href="">Psychiatry</a>
-<LI><a href="">Pulmonology</a>
-</UL>
-</div>
-
-<div>
-<UL>
-<LI><a href="">Biostats</a>
-<LI><a href="">Ethics/Medical law</a>
-<LI><a href="">Preventative care</a>
-<LI><a href="">General surgery</a>
-<LI><a href="">Vascular Surgery</a>
-</UL>
-</div>
-
-<div>
-<UL>
-<LI><a href=""> Neurology </a>
-<LI><a href=""> NeuroSurgery </a>
-<LI><a href=""> Ophthalmology </a>
-<LI><a href="">Ear, Nose, Throat</a>
-<LI><a href="OMM.html"> OMM </a>
-</UL>
-</div>
-
-<div>
-<UL>
-<LI><a href=""> Dermatology </a>
-<LI><a href=""> Radiology </a>
-<LI><a href=""> Geriatrics </a>
-<LI><a href=""> Orthopedic surgery</a>
-<LI><a href="">Emergency Medicine</a>
-
-</UL>
+    
+    
+ <div>
+      
+   
 </div>
 
 
 
 
-  </body>
-</html>
+
+<div class="container">
+  <h2>COMLEX</h2>
+  
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" class="collapsed">Section 1: Internal Medicine</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">
+    
+
+   <ul>
+    <li><a href="">Chapter 1:  Infectious Disease</a>
+    </li><li><a href="">Chapter 2:  Allergy and Immunology</a>
+    </li><li><a href="">Chapter 3:  Cardiology</a>
+    </li><li><a href="">Chapter 4:  Endocrinology</a>
+    </li><li><a href="">Chapter 5:  Pulmonology</a>
+    </li><li><a href="">Chapter 6:  Rheumatology</a>
+    </li><li><a href="">Chapter 7:  Hematology</a>  
+    </li><li><a href="">Chapter 8:  Gastroenterology</a>
+    </li><li><a href="">Chapter 9:  Neurology</a>
+    </li><li><a href="">Chapter 10: Nephrology</a>
+    </li><li><a href="">Chapter 11: Oncology</a>  
+   </li></ul>
+
+</div>
+      </div>
+    </div>
+    
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed" aria-expanded="false">Section 2: Preventative Medicine</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">...</div>
+      </div>
+    </div>
+      
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed" aria-expanded="false">Section 3: Dermatology</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">...</div>
+      </div>
+    </div>
+      
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed" aria-expanded="false">Section 4: Surgery</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">...</div>
+      </div>
+    </div>
+      
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="collapsed" aria-expanded="false">Section 5: Pediatrics</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">...</div>
+      </div>
+    </div>
+      
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" class="collapsed" aria-expanded="false">Section 6: Obstetrics</a>
+        </h4>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">...</div>
+      </div>
+    </div>
+      
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse7" class="collapsed" aria-expanded="false">Section 7: Gynecology</a>
+        </h4>
+      </div>
+      <div id="collapse7" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">...</div>
+      </div>
+    </div>
+      
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse8" class="collapsed" aria-expanded="false">Section 8: Radiology</a>
+        </h4>
+      </div>
+      <div id="collapse8" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">...</div>
+      </div>
+    </div>
+      
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse9" class="collapsed" aria-expanded="false">Section 9: Opthomology</a>
+        </h4>
+      </div>
+      <div id="collapse9" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">...</div>
+      </div>
+    </div>
+      
+      
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse10" class="collapsed" aria-expanded="false">Section 10: Psychiatry</a>
+        </h4>
+      </div>
+      <div id="collapse10" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">...</div>
+      </div>
+    </div>
+      
+      
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse11" class="collapsed" aria-expanded="false">Section 11: Emergency Medicine</a>
+        </h4>
+      </div>
+      <div id="collapse11" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">...</div>
+      </div>
+    </div>
+      
+      
+      
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse12" class="collapsed" aria-expanded="false">Section 12: Ethics/Medical Law</a>
+        </h4>
+      </div>
+      <div id="collapse12" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">...</div>
+      </div>
+    </div>
+      
+      
+      
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse13" class="collapsed" aria-expanded="false">Section 13: Biostatistics</a>
+        </h4>
+      </div>
+      <div id="collapse13" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">...</div>
+      </div>
+    </div>
+      
+      
+      
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse14" class="collapsed" aria-expanded="false">Section 14: Geriatrics</a>
+        </h4>
+      </div>
+      <div id="collapse14" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">...</div>
+      </div>
+    </div>
+      
+      
+      
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse15" class="collapsed" aria-expanded="false">Section 15: OMM</a>
+        </h4>
+      </div>
+      <div id="collapse15" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">...</div>
+      </div>
+    </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  </div> 
+</div>
+
+
+
+
+
+
+
+
+
+    </main>
+
+</body></html>
