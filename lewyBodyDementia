@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+  html, body{
+    height: 100%
+}
+#header{
+    background-color: rgb(0, 61, 121);
+    height: 41px;
+    width: 100%;
+}
+#footer{
+    background-color: rgb(0, 61, 121);
+    bottom: 0;
+    height: 41px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+
+  </style>
+  
+</head>
+<body>
+<nav id="header" class="navbar navbar-default"></nav>
+
+<div class="container">
+  <h2>Lewy body dementia</h2>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#overview">Overview</a></h4></div>
+      
+      <div id="overview" class="panel-collapse collapse">
+        <div class="panel-body">Lewy body disease is a neurodegenerative disorder that has features of both Alzheimer's and Parkinson's diseases. Lewy body dementia is characterized by visual hallucinations, dysautonomia, sleep disorders and neuroleptic sensitivity. The diagnosis of Lewy body disease is often a delayed diagnosis. However, Lewy body dementia differs from Alzheimer's disease in that memory loss is not the first presenting symptom. Impairments in attention, executive and visuospatial abilities present initially. Mental status is fluctuating. Patients typically have problems with work or driving difficulties. The key component of Lewy body dementia is parkinsonian symptoms that develop later in the disease. Neuroimaging shows atrophy of the brain with sparing of the hippocampus. Accumulation of round, eosinophilic intraneuronal inclusions, called lewy bodies, in the substantia nigra are seen on pathological examination. Lewy bodies are a result of abnormal alpha-synuclein conformation.</div></div></div>
+        
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#riskfactors">Risk Factors</a>
+        </h4>
+      </div>
+      <div id="riskfactors" class="panel-collapse collapse">
+        <div class="panel-body">insert text</div></div></div>        
+        
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#ss">Signs & Symptoms</a>
+        </h4>
+      </div>
+      <div id="ss" class="panel-collapse collapse">
+        <div class="panel-body">insert text</div></div></div>
+        
+        
+        
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#diagnostics">Diagnostics</a>
+        </h4></div>
+      <div id="diagnostics" class="panel-collapse collapse">
+        <div class="panel-body">insert text</div></div></div>
+        
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#treatment">Treatment</a>
+        </h4></div>
+      <div id="treatment" class="panel-collapse collapse">
+        <div class="panel-body">insert text</div></div></div>  
+        
+        
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#complications">Complications</a>
+        </h4></div>
+      <div id="complications" class="panel-collapse collapse">
+        <div class="panel-body">insert text</div></div></div>        
+        
+  </div> 
+</div>
+    
+    
+
+
+   
+</body>
+<footer id="footer" class="navbar navbar-default">
+  	<div class="container-fluid">
+    	<div class="navbar-header"></div>
+    </div>
+</footer>  
+  
+</html>
