@@ -8,7 +8,7 @@
     
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
     
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 	<style>
@@ -16,7 +16,13 @@
     background-color: rgb(0, 61, 121);
     border-color: #080808;
 }		
-		
+
+.panel-default>.panel-heading {
+        color: white;
+    	background-color: rgb(0, 61, 121);
+    	border-color: #080808;
+        }
+        
 a:link {
     text-decoration: none;
 }
@@ -49,14 +55,16 @@ btn-link:active {
   <body class="" style="">
 
   <main class="container">
+    
+
+  
+
 	 
     
     <div class="row">
     
     <div class="col-sm-1"></div> 
     <div class="col-sm-10">
-	    
-   <div class="container">
 <nav class="navbar navbar-default" id="comlexColor">
   
     <div class="container">
@@ -103,12 +111,10 @@ btn-link:active {
   </div> 
         
         
-      </div>
+ 
     
-    
-</nav>
-  
-</div>
+</div></nav>	    
+   
 	  
     
       <form action="/search/" method="post">
@@ -150,15 +156,15 @@ btn-link:active {
 
   
   
-  <div class="panel-group" id="accordion">
+  <div class="panel-group" id="accordion comlexColor" style="color: white;">
     
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title text-danger lead">
           
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="" aria-expanded="true"><strong>Section 1: Internal Medicine</strong></a></h4>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed" aria-expanded="false"><strong>Section 1: Internal Medicine</strong></a></h4>
       </div>
-      <div id="collapse1" class="panel-collapse collapse" aria-expanded="true">
+      <div id="collapse1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
         <ul class="list-group">
           <li class="list-group-item">
           		  <!-- Trigger the modal with a link -->
@@ -768,10 +774,10 @@ btn-link:active {
  <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed" aria-expanded="false">Section 2: Preventative Medicine</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="" aria-expanded="true">Section 2: Preventative Medicine</a>
         </h4>
       </div>
-      <div id="collapse2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+      <div id="collapse2" class="panel-collapse collapse in" aria-expanded="true">
         <div class="panel-body">
     
     
@@ -1202,7 +1208,7 @@ btn-link:active {
 	      
 	      
     </div>
-      <div class="text-center"><a class="text-warning" href="diseaseindex.html" role="button">Disease</a></div>
+      <div class="text-center"><h2><a class="text-warning" href="diseaseindex.html" role="button">Disease</a></h2></div>
        
       
       
@@ -1212,6 +1218,7 @@ btn-link:active {
                                <div class="col-sm-1"></div>                             </div>
     </main>
  
+
 
 
 
