@@ -12,4 +12,9 @@ $(document).ready(function(){
         $("#esomeprazole").load("https://NucleusMedEd.github.io/pharm/pharm.txt #esomeprazole");
     });
     
+    $("[data-target='#zollingerEllison']").click(function(){
+        $("#zollingerEllison").load("https://NucleusMedEd.github.io/pharm/pharm.txt #zollingerEllison");
+    });
+    
+    
 });
