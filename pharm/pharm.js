@@ -8,5 +8,8 @@ $(document).ready(function(){
         $("#riluzole").load("https://NucleusMedEd.github.io/pharm/pharm.txt #riluzole");
     });
     
+    $("[data-target='#esomeprazole']").click(function(){
+        $("#esomeprazole").load("https://NucleusMedEd.github.io/pharm/pharm.txt #esomeprazole");
+    });
     
 });
