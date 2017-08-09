@@ -12,9 +12,6 @@ $(document).ready(function(){
         $("#esomeprazole").load("https://NucleusMedEd.github.io/pharm/pharm.txt #esomeprazole");
     });
     
-    $("[data-target='#zollingerEllison_overview']").click(function(){
-        $("#zollingerEllison_overview").load("https://NucleusMedEd.github.io/pharm/pharm.txt #zollingerEllison_overview");
-    });
     
     
 });
