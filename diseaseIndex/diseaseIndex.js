@@ -9,7 +9,7 @@ $(document).ready(function(){
     });
     
     $("[data-target='#zollingerEllison_overview']").click(function(){
-        $("#zollingerEllison_overview").load("https://NucleusMedEd.github.io/pharm/pharm.txt #zollingerEllison_overview");
+        $("#zollingerEllison_overview").load("https://NucleusMedEd.github.io/diseaseIndex/index.txt #zollingerEllison_overview");
     });
     
 });
