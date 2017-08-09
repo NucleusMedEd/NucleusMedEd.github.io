@@ -1,2 +1,9 @@
+<p id=""></p>
+
 <p id="riluzole">Riluzole is a medication used to slow the progression of Amyotrophic Lateral Sclerosis (ALS). It is an antagonist of the glutamate pathway and has shown to reduce excitability. Riluzole is the only medication that has shown to increase survival in patients with ALS. However, ALS is incurable and average span of disease is approximately 3 years from onset of symptoms.</p>
-<p id="aspirin">blah blah</p>
+
+
+<p id="esomeprazole">Esomeprazole is a proton pump inhibitor (PPI). PPIs are the most potent inhibitors of gastric acid secretion. These medications inhibit the hydrogen-potassium ATPase pump by irreversibly binding to it.  For patients that are acutely ill, intravenous PPI therapy is the first step in attempt to control the acid secretion. PPI's are superior to histamine 2 receptor blockers for the control of gastric acid hypersecretion.</p>
+
+<p id="octreotide">Octreotide is a somatostatin analog that is effective at controlling the symptoms of gastrinomas in a patient with unresectable tumor. There is some evidence that the drug is able to reduce gastrin levels and may slow tumor growth. This patient presents with acute exacerbation of peptic disease, therefore a proton pump inhibitor is immediately indicated.</p>
+
