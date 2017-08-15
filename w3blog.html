@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>Nucleus MedEd</b></h1>
+  <p>Welcome to the blog of  <span class="w3-tag">Medicine</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="/w3images/woods.jpg" alt="woods" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Alzheimer's disease</b></h3>
+      <h5>Neurology, <span class="w3-opacity">
+<script> document.write(new Date().toLocaleDateString()); </script>
+</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <div class="QuestionBody">An 81-year-old male is brought in by his family with complaints of worsening memory loss and forgetfulness. His family notes a gradual decline in function over the last several months. History reveals that he was recently returned home by police because he had gotten lost driving. His family reports that he has also been acting much more paranoid than usual. Last week he accused his son of stealing all of his money. Past medical history is significant for type II diabetes, hypertension and hyperlipidemia. Vital signs reveal a temperature of 98.7 F, a blood pressure of 143/86 mmHg, a heart rate of 71/min, a respiratory rate of 16/min, and an oxygen saturation of 100% on room air. Physical examination reveals grossly intact cranial nerves and no focal deficits. He is oriented to person and place but not time. Mini–mental status examination reveals a score of 17/30.&nbsp;He denies hallucinations, tremors, or rigidity.</div><br>
+  <!-- choice A -->
+<button onclick="myFunction('DemoA')" class="w3-btn w3-block w3-white w3-left-align" style="width:50%"><input type="radio"> <b>A. </b> Alzheimer's disease</button>
+<div id="DemoA" class="w3-container w3-hide">
+  <p>Alzheimer's disease (AD) is a neurodegenerative disease and is the most common cause of dementia. Approximately 50 percent of patients with dementia have AD. Prevalence increases with age; autopsy studies have shown that AD changes can be seen in most individuals as they age. AD is a chronic disease with latent and prodromal stages. Memory loss is the presenting symptom. Visuospatial disturbances, poor concentration and impaired judgment are also observed. AD is a clinical diagnosis. Progressive atrophy, gliosis and diffuse cortical atrophy with enlargement of the ventricles can be seen on neuroimaging. Histopathology shows senile plaques which are characterized by eosinophilia and amyloid A beta deposition. The hippocampus is primarily affected. Neurofibrillary tangles which are intraneuronal aggregates of abnormally modified microtubule associated tau proteins are also characteristic.</p>
+</div>
+<!-- choice B -->
+<button onclick="myFunction('DemoB')" class="w3-btn w3-block w3-white w3-left-align" style="width:50%"><input type="radio"> <b>B. </b> Huntington's disease</button>
+<div id="DemoB" class="w3-container w3-hide">Huntington disease (HD) is an autosomal dominant neurodegenerative disorder. It is caused by a trinucleotide cysteine-adenosine-guanine repeat expansion on chromosome 4. The disease is characterized by choreiform movements, behavioral change and dementia. Chorea is the hallmark symptom of HD. Chorea is a rapid, arrhythmic and involuntary movement of the face, trunk, and limbs. Disorders in movement are the first symptoms to appear and develop insidiously with psychiatric and cognitive features. Hypotonia with hyperreflexia is a feature of early disease. As the disease progresses, chorea is replaced by a rigid, parkinsonian state. Abnormal eye movements are seen in early disease. Psychiatric symptoms include irritability, depression and social problems. Cognitive decline is defined as executive dysfunction with diminished ability to make decisions, multitask and difficulty with time. However, different from Alzheimer disease, memory loss is not a typical feature until advanced disease. Lastly, unintentional weight loss and cachexia are common. Diagnosis is clinical and based on a positive family history. Atrophy, neuronal loss with protein aggregates are seen in the caudate and putamen. HD is an incurable disease; treatment is supportive only. <button onclick="document.getElementById('modalQHuntington').style.display='block'" class="w3-button w3-white">&gt;&gt; <b>question</b> &lt;&lt;</button>
+
+  <div id="modalQHuntington" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('modalQHuntington').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>A 32-year-old female with a family history of dementia presents with worsening hypotonia with hyperreflexia.</p>
+        
+      </div></div></div></div>
+<!-- choice C -->
+<button onclick="myFunction('DemoC')" class="w3-btn w3-block w3-white w3-left-align" style="width:50%"><input type="radio"> <b>C. </b> Lewy body dementia</button>
+<div id="DemoC" class="w3-container w3-hide">Lewy body disease is a neurodegenerative that has features of both Alzheimer's and Parkinson's diseases. Lewy body dementia is characterized by visual hallucinations, dysautonomia, sleep disorders and neuroleptic sensitivity. The diagnosis of Lewy body disease is often a delayed diagnosis. However, Lewy body dementia differs from Alzheimer's disease in that memory loss is not the first presenting symptom. Impairments in attention, executive and visuospatial abilities present initially. Mental status is fluctuating. Patients typically have problems with work or driving difficulties. The key component of Lewy body dementia is parkinsonian symptoms that develop later in the disease. Neuroimaging shows atrophy of the brain with sparing of the hippocampus. Accumulation of round, eosinophilic intranuclear inclusions, called Lewy bodies, in the substantia nigra are seen on pathological examination. Lewy bodies are a result of abnormal aplha-synuclein conformation. <button onclick="document.getElementById('modalQLewyBody').style.display='block'" class="w3-button w3-white">&gt;&gt; <b>question</b> &lt;&lt;</button>
+
+  <div id="modalQLewyBody" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('modalQLewyBody').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>A 64-year-old female complains of visual hallucinations. Akinesia and preservation of memory are noted on examination.</p>
+        
+      </div></div></div></div>
+<!-- choice D -->
+<button onclick="myFunction('DemoD')" class="w3-btn w3-block w3-white w3-left-align" style="width:50%"><input type="radio"> <b>D. </b> Pick's disease</button>
+<div id="DemoD" class="w3-container w3-hide">Frontotemporal dementia (FTD), otherwise known as Pick's disease, is a neurodegeneration disease of the frontal and/or temporal lobes. Patients present with personality change and inappropriate social conduct, loss of social awareness and insight with blunt emotional responses. Eventually these symptoms develop into a more global dementia. Different from Alzheimer's disease, memory and visuospatial skills are often preserved. Also, FTD progresses more rapidly than Alzheimer's disease. In FTD serotonergic deficits occur with relative sparing of acetylcholine function. Neuroimaging shows bifrontal atrophy without evidence of amyloid plaques or neurofibrillary tangles which are seen Alzheimer's disease.<button onclick="document.getElementById('modalQPickDz').style.display='block'" class="w3-button w3-white">&gt;&gt; <b>question</b> &lt;&lt;</button>
+
+  <div id="modalQPickDz" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('modalQPickDz').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>A 42-year-old alcoholic and cocaine addict presents with emotional blunting and loss of empathy.</p>
+        
+      </div></div></div></div>
+<!-- choice E -->
+<button onclick="myFunction('DemoE')" class="w3-btn w3-block w3-white w3-left-align" style="width:50%"><input type="radio"> <b>E. </b> Vascular dementia</button>
+<div id="DemoE" class="w3-container w3-hide">Dementia secondary to vascular injury is the second most common cause of dementia. Risk factors include hypertension, smoking, diabetes mellitus and hyperlipidemia. Most cases of vascular dementia are sporadic and evolve after stroke. Individuals with vascular dementia present with an abrupt deterioration in motor or cognitive function and tend to progressively decline in a sudden step-wise fashion. Cognitive screening tools are remarkable for patchy deficits unlike Alzheimer's disease which shows diffuse deficits with slow, steady progression. Physical examination is remarkable for focal neurological findings such as hemiparesis, visual field deficits and hemisensory defects. Gross ischemic infarcts, lacunar infarcts, and arteriosclerosis with minimal atrophy are apparent on neuroimaging.<button onclick="document.getElementById('modalQVascDem').style.display='block'" class="w3-button w3-white">&gt;&gt; <b>question</b> &lt;&lt;</button>
+
+  <div id="modalQVascDem" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('modalQVascDem').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>A 71-year-old male presents with a sudden progression in his short-term memory loss. Over the past few years his daughter recalls several instances where his symptoms abruptly deteriorated and led to his inability to follow instructions and difficulty with balance while walking.</p>
+        
+      </div></div></div></div>
+</div>
+<!-- end of answer choices -->
+
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Iron Deficiency Anemia</b></h3>
+      <h5>Hematology, <span class="w3-opacity"><script> document.write(new Date().toLocaleDateString()); </script></span></h5>
+    </div>
+
+    <div class="w3-container">
+      <div><strong>Overview:</strong><br>
+ Iron deficiency anemia is the most common cause of anemia worldwide. Iron is a vital metal for living organisms. It is used in oxygen transport, deoxyribonucleic acid (DNA) synthesis, and electron transport. Iron is absorbed by the proximal small intestine and is delivered to cells via transferrin. The iron concentration within erythrocytes varies directly with the body's daily iron requirement. Iron deficiency anemia is caused by insufficient dietary intake, iron malabsorption, and/or iron loss from bleeding. Chronic blood loss from menstrual bleeding must always be excluded. Clinical features include pallor, fatigue, dyspnea on exertion, orthostatic hypotension, and/or tachycardia. If the anemia is untreated, more severe physical signs will be evident. Laboratory analysis in iron deficiency anemia reveals a high red blood cell distribution width with a low mean corpuscular width (MCV). A low MCV reflects the abnormally small size of the red blood cells. This is known as a microcytic anemia.  A low serum ferritin and iron with an elevated serum transferrin and a high total iron binding capacity (TIBC) are laboratory values that are seen in iron deficiency anemia. A low serum ferritin is the most sensitive lab test for iron deficiency anemia. Transferrin saturation, the ratio of serum iron to TIBC is the most specific indicator of iron deficiency. Transferrin saturation is low in iron deficiency. The blood smear of a patient with iron deficiency anemia shows many hypochromic, small red blood cells. There is a widening of the central pallor accounting for greater than one-third of the total red blood cell diameter. Poikilocytosis and anisocytosis may also be apparent. </div>
+<br>
+
+<div><strong>Question:</strong> ?</div>
+<br>
+<div><strong>Risk:</strong> ?</div>
+<br>
+<div><strong>Presentation:</strong><br>
+ pallor, fatigue, dyspnea on exertion, orthostatic hypotension, and/or tachycardia </div>
+<br>
+<div><strong>Labs:</strong><br>Microcytic Anemia<strong>, </strong>High<strong> TIBC, *</strong>Low serum <strong>ferritin*</strong>,  low <strong>iron</strong> with low <strong>transferrin</strong> <strong>saturation</strong>. High RDW, low MCV</div>
+<br>
+<div><strong>Treatment:</strong> ?</div>
+<br>
+<div><strong>BottomLine:</strong> ?</div>
+<br>
+<div><strong>Compare:</strong><br>
+
+<input name="labs" type="radio" value="Alpha_Thalassemia" /> Alpha-Thalassemia trait<br>
+<input name="labs" type="radio" value="ACD"/>Anemia of Chronic failure<br>
+<input name="labs" type="radio" value="IDA"/>Iron deficiency Anemia<br>
+<input name="labs" type="radio" value="SbAnemia"/>Sideroblastic anemia<br>
+<input name="labs" type="radio" value="b12d"/>B12 deficiency
+
+</div>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Alzheimer's disease</b></h3>
+      <h5>Neurology, <span class="w3-opacity">
+<script> document.write(new Date().toLocaleDateString()); </script>
+</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <div class="QuestionBody">An 81-year-old male is brought in by his family with complaints of worsening memory loss and forgetfulness. His family notes a gradual decline in function over the last several months. History reveals that he was recently returned home by police because he had gotten lost driving. His family reports that he has also been acting much more paranoid than usual. Last week he accused his son of stealing all of his money. Past medical history is significant for type II diabetes, hypertension and hyperlipidemia. Vital signs reveal a temperature of 98.7 F, a blood pressure of 143/86 mmHg, a heart rate of 71/min, a respiratory rate of 16/min, and an oxygen saturation of 100% on room air. Physical examination reveals grossly intact cranial nerves and no focal deficits. He is oriented to person and place but not time. Mini–mental status examination reveals a score of 17/30.&nbsp;He denies hallucinations, tremors, or rigidity.</div><br>
+  <!-- choice A -->
+<button onclick="myFunction('DemoA')" class="w3-btn w3-block w3-white w3-left-align" style="width:50%"><input type="radio"> <b>A. </b> Alzheimer's disease</button>
+<div id="DemoA" class="w3-container w3-hide">
+  <p>Alzheimer's disease (AD) is a neurodegenerative disease and is the most common cause of dementia. Approximately 50 percent of patients with dementia have AD. Prevalence increases with age; autopsy studies have shown that AD changes can be seen in most individuals as they age. AD is a chronic disease with latent and prodromal stages. Memory loss is the presenting symptom. Visuospatial disturbances, poor concentration and impaired judgment are also observed. AD is a clinical diagnosis. Progressive atrophy, gliosis and diffuse cortical atrophy with enlargement of the ventricles can be seen on neuroimaging. Histopathology shows senile plaques which are characterized by eosinophilia and amyloid A beta deposition. The hippocampus is primarily affected. Neurofibrillary tangles which are intraneuronal aggregates of abnormally modified microtubule associated tau proteins are also characteristic.</p>
+</div>
+<!-- choice B -->
+<button onclick="myFunction('DemoB')" class="w3-btn w3-block w3-white w3-left-align" style="width:50%"><input type="radio"> <b>B. </b> Huntington's disease</button>
+<div id="DemoB" class="w3-container w3-hide">Huntington disease (HD) is an autosomal dominant neurodegenerative disorder. It is caused by a trinucleotide cysteine-adenosine-guanine repeat expansion on chromosome 4. The disease is characterized by choreiform movements, behavioral change and dementia. Chorea is the hallmark symptom of HD. Chorea is a rapid, arrhythmic and involuntary movement of the face, trunk, and limbs. Disorders in movement are the first symptoms to appear and develop insidiously with psychiatric and cognitive features. Hypotonia with hyperreflexia is a feature of early disease. As the disease progresses, chorea is replaced by a rigid, parkinsonian state. Abnormal eye movements are seen in early disease. Psychiatric symptoms include irritability, depression and social problems. Cognitive decline is defined as executive dysfunction with diminished ability to make decisions, multitask and difficulty with time. However, different from Alzheimer disease, memory loss is not a typical feature until advanced disease. Lastly, unintentional weight loss and cachexia are common. Diagnosis is clinical and based on a positive family history. Atrophy, neuronal loss with protein aggregates are seen in the caudate and putamen. HD is an incurable disease; treatment is supportive only. <button onclick="document.getElementById('modalQHuntington').style.display='block'" class="w3-button w3-white">&gt;&gt; <b>question</b> &lt;&lt;</button>
+
+  <div id="modalQHuntington" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('modalQHuntington').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>A 32-year-old female with a family history of dementia presents with worsening hypotonia with hyperreflexia.</p>
+        
+      </div></div></div></div>
+<!-- choice C -->
+<button onclick="myFunction('DemoC')" class="w3-btn w3-block w3-white w3-left-align" style="width:50%"><input type="radio"> <b>C. </b> Lewy body dementia</button>
+<div id="DemoC" class="w3-container w3-hide">Lewy body disease is a neurodegenerative that has features of both Alzheimer's and Parkinson's diseases. Lewy body dementia is characterized by visual hallucinations, dysautonomia, sleep disorders and neuroleptic sensitivity. The diagnosis of Lewy body disease is often a delayed diagnosis. However, Lewy body dementia differs from Alzheimer's disease in that memory loss is not the first presenting symptom. Impairments in attention, executive and visuospatial abilities present initially. Mental status is fluctuating. Patients typically have problems with work or driving difficulties. The key component of Lewy body dementia is parkinsonian symptoms that develop later in the disease. Neuroimaging shows atrophy of the brain with sparing of the hippocampus. Accumulation of round, eosinophilic intranuclear inclusions, called Lewy bodies, in the substantia nigra are seen on pathological examination. Lewy bodies are a result of abnormal aplha-synuclein conformation. <button onclick="document.getElementById('modalQLewyBody').style.display='block'" class="w3-button w3-white">&gt;&gt; <b>question</b> &lt;&lt;</button>
+
+  <div id="modalQLewyBody" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('modalQLewyBody').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>A 64-year-old female complains of visual hallucinations. Akinesia and preservation of memory are noted on examination.</p>
+        
+      </div></div></div></div>
+<!-- choice D -->
+<button onclick="myFunction('DemoD')" class="w3-btn w3-block w3-white w3-left-align" style="width:50%"><input type="radio"> <b>D. </b> Pick's disease</button>
+<div id="DemoD" class="w3-container w3-hide">Frontotemporal dementia (FTD), otherwise known as Pick's disease, is a neurodegeneration disease of the frontal and/or temporal lobes. Patients present with personality change and inappropriate social conduct, loss of social awareness and insight with blunt emotional responses. Eventually these symptoms develop into a more global dementia. Different from Alzheimer's disease, memory and visuospatial skills are often preserved. Also, FTD progresses more rapidly than Alzheimer's disease. In FTD serotonergic deficits occur with relative sparing of acetylcholine function. Neuroimaging shows bifrontal atrophy without evidence of amyloid plaques or neurofibrillary tangles which are seen Alzheimer's disease.<button onclick="document.getElementById('modalQPickDz').style.display='block'" class="w3-button w3-white">&gt;&gt; <b>question</b> &lt;&lt;</button>
+
+  <div id="modalQPickDz" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('modalQPickDz').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>A 42-year-old alcoholic and cocaine addict presents with emotional blunting and loss of empathy.</p>
+        
+      </div></div></div></div>
+<!-- choice E -->
+<button onclick="myFunction('DemoE')" class="w3-btn w3-block w3-white w3-left-align" style="width:50%"><input type="radio"> <b>E. </b> Vascular dementia</button>
+<div id="DemoE" class="w3-container w3-hide">Dementia secondary to vascular injury is the second most common cause of dementia. Risk factors include hypertension, smoking, diabetes mellitus and hyperlipidemia. Most cases of vascular dementia are sporadic and evolve after stroke. Individuals with vascular dementia present with an abrupt deterioration in motor or cognitive function and tend to progressively decline in a sudden step-wise fashion. Cognitive screening tools are remarkable for patchy deficits unlike Alzheimer's disease which shows diffuse deficits with slow, steady progression. Physical examination is remarkable for focal neurological findings such as hemiparesis, visual field deficits and hemisensory defects. Gross ischemic infarcts, lacunar infarcts, and arteriosclerosis with minimal atrophy are apparent on neuroimaging.<button onclick="document.getElementById('modalQVascDem').style.display='block'" class="w3-button w3-white">&gt;&gt; <b>question</b> &lt;&lt;</button>
+
+  <div id="modalQVascDem" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('modalQVascDem').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>A 71-year-old male presents with a sudden progression in his short-term memory loss. Over the past few years his daughter recalls several instances where his symptoms abruptly deteriorated and led to his inability to follow instructions and difficulty with balance while walking.</p>
+        
+      </div></div></div></div>
+</div>
+<!-- end of answer choices -->
+
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card-2 w3-margin w3-margin-top">
+  <img src="/w3images/avatar_g.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>My Name</b></h4>
+      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+    </div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card-2 w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Popular Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:25%">
+        <span class="w3-large">Lorem</span><br>
+        <span>Sed mattis nunc</span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:25%">
+        <span class="w3-large">Ipsum</span><br>
+        <span>Praes tinci sed</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:25%">
+        <span class="w3-large">Dorum</span><br>
+        <span>Ultricies congue</span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:25%">
+        <span class="w3-large">Mingsum</span><br>
+        <span>Lorem ipsum dipsum</span>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card-2 w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
