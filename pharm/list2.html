@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="text-danger"><b>Pharmacology</b></h1>
+  <!--To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.-->
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#pharm_index">Index</a></li>
+    <li><a data-toggle="tab" href="#clinicalUse_tab">Clinical Use</a></li>
+    <li><a data-toggle="tab" href="#sideEffects_tab">Side Effects</a></li>
+    <li><a data-toggle="tab" href="#moa_tab">MOA</a></li>
+   
+  </ul>
+
+  <div class="tab-content">
+    <div id="clinicalUse_tab" class="tab-pane fade">
+      <h3>Clinical Use</h3><hr>
+<!-- Modal button-->      
+<button type="button" class="btn btn-link btn" data-toggle="modal" data-target="#hydrochlorothiazide_CU">Hydrochlorothiazide</button>
+
+<!-- Modal -->
+<div id="hydrochlorothiazide_CU" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Hydrochlorothiazide</h4>
+      </div>
+      <div class="modal-body">
+        <p>causes; HypoNatremia, HyperCalcemia, Hyperglycemia, to an extent HypoKalemia</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- END of Modal content-->
+    </div>
+    
+    
+    
+    
+    
+    
+    <div id="sideEffects_tab" class="tab-pane fade">
+      <h3>Side Effects</h3><hr>
+<!-- Modal button-->      
+<button type="button" class="btn btn-link btn" data-toggle="modal" data-target="#hydrochlorothiazide_SE">Hydrochlorothiazide</button>
+
+<!-- Modal -->
+<div id="hydrochlorothiazide_SE" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Hydrochlorothiazide</h4>
+      </div>
+      <div class="modal-body">
+        <p>This patient is having an acute gout flare due to the addition of hydrochlorothiazide. Thiazide diuretics aggravate gout by competitively inhibiting the secretion of uric acid. They lead to hyperuricemia and are contraindicated when gout is present in the patient history. Other side effects of thiazides which are noteworthy include, hyperglycemia, hypercalcemia (therefore can be used in treatment of nephrolithiasis by decreasing calcium concentrations in renal tubules), and hypokalemia(although to a lesser degree than loop diuretics).</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- END of Modal content-->
+    </div>
+    <div id="moa_tab" class="tab-pane fade">
+      <h3>MOA</h3><hr>
+<!-- Modal button-->      
+<button type="button" class="btn btn-link btn" data-toggle="modal" data-target="#hydrochlorothiazide_MOA">Hydrochlorothiazide</button>
+
+<!-- Modal -->
+<div id="hydrochlorothiazide_MOA" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Hydrochlorothiazide</h4>
+      </div>
+      <div class="modal-body">
+        <p>causes; HypoNatremia, HyperCalcemia, Hyperglycemia, to an extent HypoKalemia</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- END of Modal content-->
+    </div>
+    
+    
+    
+    
+    <div id="pharm_index" class="tab-pane fade in active">
+      <h3>Pharm Index</h3><hr>
+<!-- Modal button list-->
+<ul>
+<li><button type="button" class="btn btn-link btn" data-toggle="modal" data-target="#hydrochlorothiazide">Hydrochlorothiazide</button>
+
+<li><button type="button" class="btn btn-link btn" data-toggle="modal" data-target="#ACEi">ACE inhibitor</button>
+
+<li><button type="button" class="btn btn-link btn" data-toggle="modal" data-target="#loops">Loop diuretics</button>
+</ul>
+<!-- Modal -->
+<div id="hydrochlorothiazide" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+<!-- start of tab bar-->      
+        <ul class="nav nav-tabs">
+  <li><a class="btn btn-danger">Hydrochlorothiazide</a></li>      
+  <li class="active"><a data-toggle="tab" href="#moa">MOA</a></li>
+  <li><a data-toggle="tab" href="#clinicalUse">Clinical Use</a></li>
+  <li><a data-toggle="tab" href="#sideEffects">Side Effects</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="moa" class="tab-pane fade in active">
+ 
+  </div>
+  <div id="clinicalUse" class="tab-pane fade">
+    <h3>Menu 1</h3>
+    <p>Some content in menu 1.</p>
+  </div>
+  <div id="sideEffects" class="tab-pane fade">
+    <br><p>This patient is having an acute gout flare due to the addition of hydrochlorothiazide. Thiazide diuretics aggravate gout by competitively inhibiting the secretion of uric acid. They lead to hyperuricemia and are contraindicated when gout is present in the patient history. Other side effects of thiazides which are noteworthy include, hyperglycemia, hypercalcemia (therefore can be used in treatment of nephrolithiasis by decreasing calcium concentrations in renal tubules), and hypokalemia(although to a lesser degree than loop diuretics).</p>
+  </div>
+</div>
+<!-- end of tab bar-->        
+        
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- END of Modal content-->
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+<script>
+/*<!-- Model template
+
+<!-- Modal button-->      
+<button type="button" class="btn btn-link btn" data-toggle="modal" data-target="#myModal">Modalname</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modalname</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- END of Modal content-->
+
+
+-->
