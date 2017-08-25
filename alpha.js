@@ -1,3 +1,40 @@
+/*
+
+Estimate the risk for stroke in AF pt. => use CHADS2 risk factor score. 
+1 point each = [CHF, HTN, a>=75, DM2]; 2 points each = [stroke, TIA];
+
+CHADS2 === 0 {low risk}
+CHADS2 > 0 <= 2 {moderate risk}
+CHADS2 >= 3 {severe risk}
+
+Tx_aFib = long-term anti-coagulation{
+        if(score >= 3){ 
+            drug = 'Warfarin';
+        } else {
+             drug = 'null';
+        }          
+    }
+
+
+
+
+function age_devMilestone() {
+    let age;
+    if (age === 4) {
+        return "rolling from front to back, swiping at objects, cooing noise, and a social smile";
+    } else if (age === 6) {
+        return "6";
+    } else if(age === 9){
+        return "crawling and pulling to stand, pincer grasp, mama and baba nonspecific language, responds to name, and waving bye.";
+    } else if(age === 12){
+        return "standing, mama and baba specific language";
+    } else if(age === 15){
+        return "walking, using a cup, forming 4-5 words, and temper tantrums";
+    } else {
+        return 'sorry no milestone available, try again';
+    }
+
+*/
 function Disease(name, riskFactor, pathoPhysio, presentation, workUp, treatment, omm, question, questionChoices, overView) {
     this.name = name;
     this.riskFactor = riskFactor;
