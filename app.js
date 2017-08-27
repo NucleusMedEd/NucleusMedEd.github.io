@@ -177,3 +177,8 @@ var highYield = {
         this.name = name;
         this.hyFact = hyFact;
 }
+
+gastroparesis.workup = {"gastric scintography"};
+gastroparesis.presentation = {"chronic nausea + " + vomiting + " + early satiety"};
+gastroparesis.riskFactor = {diabetes};
+gastroparesis.treatment = {"Motility agents: " + erythromycin + metoclopramide};
