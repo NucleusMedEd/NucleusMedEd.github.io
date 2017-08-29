@@ -73,18 +73,17 @@ function pCO2_expected(bicarb) {
 var sodium;
 var chloride;
 var bicarb;
-var anion_gap_normal = (measured_anion_gap >= 12 && measured_anion_gap <= 16);
-
 function measured_anion_gap(sodium, chloride, bicarb) {
     var anion_gap = sodium - (chloride + bicarb); 
     return anion_gap;
 }
 
-function anion_gap_normal(number) { 
-    if (measured_anion_gap >=12 && measured_anion_gap <=16){ return measured_anion_gap + " normal";} else{ return measured_anion_gap + " abnormal";}
+function anion_gap_normal(measured_anion_gap) { 
+    if (measured_anion_gap >=12 && measured_anion_gap <=16){ return measured_anion_gap || " normal";} else{ return measured_anion_gap || " abnormal";}
 }
+
 function bicarb_corrected() {
-    var anion_gap_difference = measured_anion_gap - anion_gap_normal(measured_anion_gap);
+    var anion_gap_difference = measured_anion_gap - anion_gap_normal;
     return anion_gap_difference + bicarb;
 }
 /*
