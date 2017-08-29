@@ -1,3 +1,92 @@
+var myocardial_Ischemia;
+var myocardial_Infarction;
+var V_fib;
+var V_tach;
+var PEA;
+var Torsade;
+var hypothermia;
+var A_fib;
+var A_flutter;
+var SVT;
+var WPW;
+var sinus_tachy;
+var sinus_brady;
+var first_degree_HB;
+var second_degree_type1_HB;
+var second_degree_type2_HB;
+var third_degree_HB;
+var LVH;
+var RVH;
+var LBBB;
+var RBBB;
+
+var boardEKGlist = [
+    myocardial_Ischemia, myocardial_Infarction, V_fib, V_tach, PEA, Torsade, hypothermia, A_fib, A_flutter, SVT, WPW, sinus_tachy, sinus_brady,
+    first_degree_HB, second_degree_type1_HB, second_degree_type2_HB, third_degree_HB, LVH, RVH, LBBB, RBBB
+];
+
+var cystocele = {pathophys: "prolapse of bladder", presentation: "urinary incontinence, bulging anterior vaginal wall"};
+var enterocele = "small bowel prolapse";
+var rectocele = "patient’s report of splinting, or using fingers to apply pressure to posterior vagina in order to defecate";
+var uterine_prolapse = {presentation: "present with a lowered cervix"};
+var vaginal_vault_prolapse = {presentation: "more common after a hysterectomy when the vaginal cuff may prolapse"};
+
+var thyrotoxicosis = {presentation: "surreptitious thyroxine ingestion typically present with hyperadrenergic symptoms = [anxiety, diarrhea, fatigue and insomnia]. PE: Physical examination reveals an irregular heart rate, fine tremor and 4/4 deep tendon reflex at the patellar region", pathophys: "The exogenous thyroxine will have a negative feedback and decrease production of thyroid stimulating hormone. There will be an elevated thyroxine level from the actual ingestion of supplement." workup: "The radioactive iodine uptake is a measure of the innate thyroid in the production of thyroxine. This pathway has been decreased from the exogenous thyroxine which was in the supplement to help lose weight. Hence low TSH, high Thyroxine, low RAIU."};
+
+var metabolic_alkalosis = {character: "increase in blood bicarb and pH", cc: "diuretic use, volume contracture secondary to gastrointestinal losses such as vomiting." feedback: "alveolar hypoventilation: arterial carbon dioxide tension, pCO2, rises by 0.5 - 0.7 mm Hg for every 1 mEq/L increase in plasma bicarbonate concentration"};
+
+var mix_both_Alkalosis = {question: "A 4-year-old unconscious female secondary to acetaminophen overdose is intubated and placed on a ventilator for respiratory support. Laboratory analysis reveals a pH of 7.68, pCO2 30 mmHg, HCO3 35 mEq/L, Na 136 mEq/L, K 4.0 mEq/L, and Cl 88 mEq/L."};
+
+function bicarb_normal(bicarb) {
+    if (bicarb >= 22 && bicarb <= 28) {
+        return "normal";
+    } else {
+        return "abnormal";
+    }
+}
+
+function pCO2_normal(number) {
+    if (number >=35 && number <= 45) {
+        return "normal";
+    } else {
+        return "abnormal";
+    }
+}
+
+function pH_normal(number) {
+    if (number >=7.35 && number <= 7.45) {
+        return "normal";
+    } else {
+        return "abnormal";
+    }
+}
+
+
+
+//winters formula
+function pCO2_expected(bicarb) {
+        var winter_formula_max = (1.5 * bicarb) + 8 + 2;
+        var winter_formula_min = (1.5 * bicarb) + 8 - 2;
+        return winter_formula_min + " - " + winter_formula_max;
+}
+
+var sodium;
+var chloride;
+var bicarb;
+var anion_gap_normal = (measured_anion_gap >= 12 && measured_anion_gap <= 16);
+
+function measured_anion_gap(sodium, chloride, bicarb) {
+    var anion_gap = sodium - (chloride + bicarb); 
+    return anion_gap;
+}
+
+function anion_gap_normal(number) { 
+    if (measured_anion_gap >=12 && measured_anion_gap <=16){ return measured_anion_gap + " normal";} else{ return measured_anion_gap + " abnormal";}
+}
+function bicarb_corrected() {
+    var anion_gap_difference = measured_anion_gap - anion_gap_normal(measured_anion_gap);
+    return anion_gap_difference + bicarb;
+}
 /*
 
 Estimate the risk for stroke in AF pt. => use CHADS2 risk factor score. 
@@ -170,7 +259,7 @@ ganglionCyst.overView = "A ganglion cyst is an out pocketing of synovial tissue.
 
 thompsonTest.overView = "patient prone and feet off table, squeeze the calves to see the foot plantarflex, positive test means there is no movement";
 chlamydia(){painless; lympgranuloma venereum; shallow ulcer;}
-h.ducreyi(){painful; enlarged LN; demarcated non-indurated ulcer;}
+h_ducreyi(){painful; enlarged LN; demarcated non-indurated ulcer;}
  Clindamycin use cause C.diff; oral metronidazole 1st line; oral vancomycin last resort;
 
 var highYield = {
