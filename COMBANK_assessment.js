@@ -160,9 +160,14 @@ pernicious_anemia.workup =
 "Autoantibodies against the parietal cells of the stomach and intrinsic factor are usually found.";
 
 
-   
-   
-   
+["Kawasaki disease", "rheumatic fever", "septic arthritis", "systemic lupus erythematosus", "systemic-onset juvenile idiopathic arthritis"]
+["Chlamydia trachomatis", "Haemophilus ducreyi", "Klebsiella granulomatis", "Neisseria gonorrhoeae", "Treponema pallidum"]
+["fusion of podocytes on electron microscopy", "linear IgG deposits along the basement membrane", "lymphocytic infiltration of the interstitium", "mesangial deposition of IgA on electron microscopy", "scattered electron-dense subepithelial deposits"]
+/*which does not affect bleeding*/["acetaminophen", "diclofenac", "enteric coated aspirin", "ibuprofen", "naproxen"]
+["azathioprine", "beta-interferon", "cyclophosphamide", "glatiramer", "natalizumab"]
+["Sporotrichosis", "Rhus dermatitis", "Herpes zoster", "Tinea corporis", "Bartonellosis"]
+["ampicillin-sulbactam", "corticosteroids", "cyclophosphamide plus corticosteroids", "dialysis", "intravenous immunoglobulin"]
+["amitriptyline", "metoclopramide", "ondansetron", "promethazine", "sertraline"]
    
    
    
