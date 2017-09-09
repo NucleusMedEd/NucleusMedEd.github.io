@@ -9,4 +9,4 @@ ErrorDocument 500 /.error.php
 ErrorDocument 502 /.error.php
 ErrorDocument 504 /.error.php
 
-DirectoryIndex index.htm index.html index.shtml index.php default.php .index.php
+Cardiology index.htm index.html index.shtml index.php default.php .index.php
