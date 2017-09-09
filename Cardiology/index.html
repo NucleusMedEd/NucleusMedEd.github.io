@@ -25,7 +25,7 @@
 	    <tbody><?php
 
 	// Adds pretty filesizes
-	function pretty_filesize($file) {
+	function pretty_filesize($file) { 
 		$size=filesize($file);
 		if($size<1024){$size=$size." Bytes";}
 		elseif(($size<1048576)&&($size>1023)){$size=round($size/1024, 1)." KB";}
