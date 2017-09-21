@@ -20,7 +20,7 @@
     <br><br>
     <img src="https://i.imgflip.com/1w90h6.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" title="meme"/>
     <br><br>
-    <button onclick="email()">email</button>
+    <button onclick="sendMail(); return false">gmail</button>
     <br>
 <script>
 function Education() {
@@ -40,8 +40,14 @@ function Education() {
   document.getElementById("response").innerHTML = text;
 }
 
-function email(){
-    window.open('mailto:shakahme@gmail.com?subject=subject&body=body');
+function sendMail() {
+    var link = "mailto:shakahme@gmail.com"
+             + "?cc=myCCaddress@example.com"
+             + "&subject=" + escape("Major Fail!!")
+             + "&body=" + escape(document.getElementById('myInput').value)
+    ;
+
+    window.location.href = link;
 }
 </script>
 </body>
