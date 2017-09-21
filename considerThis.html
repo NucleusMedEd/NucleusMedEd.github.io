@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <title>Consider This</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,16 +11,19 @@
 <body>
 
 <div class="container">
-  <h2>As an educator, what is more efficacious in the classroom?</h2><br>
-  <input id="myInput" type="text" value="unipolar OR multipolar">
-	<button onclick="Education()">submit</button>
+  <h2>As an educator, what type of focus is more efficacious in the classroom?</h2><br>
+  <input class="form-control" id="myInput" type="text" value="unipolar OR multipolar">
+  	<br>
+  	<h3 id="response"></h3>
+  	<br>
+	<button onclick="Education()" class="btn btn-default">submit</button>
+    <button style="float: right" class="btn btn-default" onclick="sendMail(); return false">shakahme@gmail.com</button>
     <br><br>
-	<h3 id="response"></h3>
+	
     <br><br>
     <img src="https://i.imgflip.com/1w90h6.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" title="meme"/>
     <br><br>
-    <button onclick="sendMail(); return false">gmail</button>
-    <br>
+
 <script>
 function Education() {
   var text; name = '<strong>Stranger</strong>, since I know my s*#!,';
