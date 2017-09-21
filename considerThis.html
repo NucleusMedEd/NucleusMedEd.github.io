@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <title>Consider This</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,43 +9,44 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-	
 <body>
-<p>As an educator, what is more efficacious in a classroom?</p>
-	
-<input id="myInput" type="text" value="unipolar OR multipolar">
-	
-<button onclick="Education()">submit</button>
-	
-<p id="response"></p>
-	
-<button onclick="email()">email</button>
-	
+
+<div class="container">
+  <h2>As an educator, what is more efficacious in the classroom?</h2><br>
+  <input id="myInput" type="text" value="unipolar OR multipolar">
+	<button onclick="Education()">submit</button>
+    <br><br>
+	<h3 id="response"></h3>
+    <br><br>
+    <img src="https://i.imgflip.com/1w90h6.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" title="meme"/>
+    <br><br>
+    <button onclick="email()">email</button>
+    <br>
 <script>
-	function Education() {
-		var text; name = 'Stranger,';
-	  	var input = document.getElementById("myInput").value;
+function Education() {
+  var text; name = '<strong>Stranger</strong>, since I know my s*#!,';
+  var input = document.getElementById("myInput").value;
 
-	  	switch(input) {
-	  		default:
-				text = 'What are your thoughts?'
-				break;
-			case 'unipolar':
-				text = name + ' it is more effective to focus on one student in a class, at a time.'
-				break;
-			case 'multipolar':
-				text = name + ' it is more effective to equally branch out and focus on each student in a class.'    
-		}
-	  document.getElementById("response").innerHTML = text;
+  switch(input) {
+    default:
+	        text = 'What are your thoughts?'
+	        break;
+	case 'unipolar':
+	        text = name + ' it is more effective to focus on <strong>one</strong> student in a class, at a time.'
+	        break;
+	 case 'multipolar':
+	        text = name + ' it is more effective to equally branch out and focus on each student in a class.'    
 	}
+  document.getElementById("response").innerHTML = text;
+}
 
-	function email(){
-		window.open('mailto:shakahme@gmail.com?subject=subject&body=body');
-	}
+function email(){
+    window.open('mailto:shakahme@gmail.com?subject=subject&body=body');
+}
 </script>
-
 </body>
 </html>
+
 
 <!-- 
 	if you rather skip to the output:
