@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>As an educator, what is more efficacious in a classroom?</p>
+<input id="myInput" type="text" value="unipolar OR multipolar">
+<button onclick="Education()">submit</button>
+<p id="response"></p>
+<button onclick="email()">email</button>
+<script>
+function Education() {
+  var text; name = 'Stranger,';
+  var input = document.getElementById("myInput").value;
+
+  switch(input) {
+    default:
+	        text = 'What are your thoughts?'
+	        break;
+	case 'unipolar':
+	        text = name + ' it is more effective to focus on one student in a class, at a time.'
+	        break;
+	 case 'multipolar':
+	        text = name + ' it is more effective to equally branch out and focus on each student in a class.'    
+	}
+  document.getElementById("response").innerHTML = text;
+}
+
+function email(){
+	window.open('mailto:shakahme@gmail.com?subject=subject&body=body');
+}
+</script>
+
+</body>
+</html>
+
+<!-- 
+	if you rather skip to the output:
+    	either go to: link,
+    	or copy & paste & save code into a .html file and view in the browser
+-->
