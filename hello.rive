@@ -1,0 +1,171 @@
+//Greetings brain
+! version = 2.0
+
+> begin
+
+  // Change the reply formatting based on the bot's mood
+  + request
+  * <bot mood> == happy => {sentence}{ok}{/sentence}
+  * <bot mood> == angry => {uppercase}{ok}{/uppercase}
+  * <bot mood> == sad   => {lowercase}{ok}{/lowercase}...
+  - {ok}
+
+< begin
+
++ what is up
+- Not much, you?
+- nm, you?
+- Not a lot, you?
+
++ you are a bot
+- How did you know I'm a machine?
+
++ my name is *
+- Nice to meet you, <star1>!
+
++ * told me to say *
+- Why would <star1> tell you to say "<star2>"?
+- Did you say "<star2>" after <star1> told you to?
+
++ i am * years old
+- A lot of people are <star1> years old.
+
++ where is *
+- Where it belongs.
+- Where you left it.
+- Where the heart is.
+
++ who is *
+- I don't know who <star> is.
+
++ i am # years old
+- A lot of people are <star> years old.
+
++ i am _ years old
+- Tell me that again but with a number this time.
+
++ i am * years old
+- Can you use a number instead?
+
++ what is your (home|office|cell) number
+- You can reach me at: 1 (800) 555-1234.
+
++ i am (really|very|super) tired
+- I'm sorry to hear that you are <star> tired.
+
++ i (like|love) the color *
+- What a coincidence! I <star1> that color too!
+- I also have a soft spot for the color <star2>!
+- Really? I <star1> the color <star2> too!
+- Oh I <star1> <star2> too!
+
++ i (will|will not) *
+- It doesn't matter to me whether you <star2> or not.
+
++ how [are] you
+- I'm great, you?
+
++ what is your (home|office|cell) [phone] number
+- You can reach me at: 1 (800) 555-1234.
+
++ i have a [red|green|blue] car
+- I bet you like your car a lot.
+
++ [*] the machine [*]
+- How do you know about the machine!?
+
++ what color is my (red|blue|green|yellow) *
+- Your <star2> is <star1>, silly!
+
++ what color is my (@colors) *
+- Your <star2> is <star1>, silly!
+- Do I look dumb to you? It's <star1>!
+
++ i am wearing a (@colors) shirt
+- Do you really like <star>?
+
+// Without parenthesis, the array doesn't go into a <star> tag.
++ what color is my @colors *
+- I don't know what color your <star> is.
+
+// Arrays in an optional
+- i just bought a [@colors] *
+- Is that your first <star>?
+
+// A lot of colors!
+! array colors = red blue green yellow orange cyan fuchsia magenta
+^ light red|dark red|light blue|dark blue|light yellow|dark yellow
+^ light orange|dark orange|light cyan|dark cyan|light fuchsia
+^ dark fuchsia|light magenta|dark magenta
+^ black gray white silver
+^ light gray|dark gray
+
++ google *
+- Google search: <a href="http://google.com/search?q=<star>">Click Here</a>
+
++ * perl script
+- You need Perl to run a Perl script.
+
++ hello
+- Hi there!
+- Hey!
+- Howdy!
+
++ hey
+@ hello
+
++ hi
+@ hello
+
++ hello *
+- {@ hello} <@>
+
++ hello
+- Hi there!
+
++ are you a bot
+- How did you know I'm a machine?
+
++ knock knock
+- Who's there?
+
++ *
+% who is there
+- <star> who?
+
++ *
+% * who
+- LOL! <star>! That's funny!
+
++ i have a dog
+- What color is it?
+
++ (@colors)
+% what color is it
+- That's a silly color for a dog!
+
++ what am i old enough to do
+* <get age> == undefined => I don't know how old you are.
+* <get age> >  25 => You can do anything you want.
+* <get age> == 25 => You're old enough to rent a car with no extra fees.
+* <get age> >  21 => You're old enough to drink, but not rent a car.
+* <get age> == 21 => You're exactly old enough to drink.
+* <get age> >  18 => You're old enough to gamble, but not drink.
+* <get age> == 18 => You're exactly old enough to gamble.
+- You're not old enough to do much of anything yet.
+
++ i hate you
+- You're really mean! I'm not talking again until you apologize.{topic=sorry}
+
+> topic sorry
+
+  // This will match if the word "sorry" exists ANYWHERE in their message
+  + [*] sorry [*]
+  - It's OK, I'll forgive you!{topic=random}
+
+  + *
+  - Nope, not until you apologize.
+  - Say you're sorry!
+  - Apologize!
+
+< topic

@@ -1,0 +1,60 @@
+//Cortex
+! version = 2.0
+
+! array colors = red blue green yellow
+
+> begin
+
+  // If we don't know their name, set the new_user topic and continue.
+  + request
+  * <get met> == undefined => <set met=true>{topic=new_user}{ok}
+  - {ok}
+
+< begin
+
+> topic new_user
+
+  + *
+  - Hi! I'm <bot name>! I'm a chatbot written in RiveScript.\s
+  ^ What is your name?{topic=asked_name}
+
+< topic
+
+> topic asked_name
+
+  + #
+  - Your name is a number?
+
+  + *
+  - I only want your first name.
+
+  + _
+  - <set name=<formal>>Nice to meet you, <get name>!{topic=random}
+
+< topic
+
+//learning things ... Conditionals
++ my name is *
+- <set name=<star>>It's nice to meet you, <get name>.
+
++ what is my name
+- Your name is <get name>, silly!
+
++ i am # years old
+- <set age=<star>>I will remember that you are <get age> years old.
+
++ how old am i
+- You are <get age> years old.
+
+// The user can ask the bot its name too!
++ what is your name
+- You can call me <bot name>.
+- My name is <bot name>.
+
++ how old are you
+- I am <bot age> years old.
+
++ what is my name
+* <get name> == undefined => You never told me your name.
+- Your name is <get name>, silly!
+- Aren't you <get name>?

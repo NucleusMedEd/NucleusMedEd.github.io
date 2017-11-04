@@ -1,0 +1,124 @@
+//chatbot's brain
+! version = 2.0
+
++ *
+- Hello, what would you like to learn today?
+
++ ask me a question
+- what topic are you currently weak on?
+- what is the best initial test?
+- what is the most accurate test?
+- what is the next step in management?
+- Is muscle energy a direct or indirect treatment?
+- What is the main difference between; calcitonin, estrogen, raloxifene, risedronate, teriparatide?
+
++ what is travell trigger point
+
++ which of the following treatments impacts unbound tetanus toxin
+- human tetanus immunoglobulin
+
++ how does epiglotitis manifest?
+
+
++ what is the + sign
+- it is a command for the program and its defines a "Trigger", a trigger is ALWAYS lowercased and it doesnt contain punctuation symbols
+
++ what is the - sign
+- it is a command for the program and it defines a Response to a trigger
+
++ say something random
+- This {random}message|sentence{/random} has a random word.
+
++ mitral stenosis
+- Mitral stenosis is the most common valvular disease caused by rheumatic heart disease and is characterized by a loud S1, along with a mid-diastolic rumble at the cardiac apex.
+
++ mitral stenosis presentation q
+- A 68-year-old male presents to the emergency department with the complaint of shortness of breath. History reveals the symptoms have been progressively worsening over the last few weeks. Past medical history reveals rheumatic heart disease. Physical examination reveals a loud first heart sound and a mid-diastolic rumble heard over the cardiac apex.
+
++ aortic regurgitation
++ aortic regurgitation presentation
+
++ mitral regurgitation
++ mitral regurgitation presentation
+
++ aortic stenosis
++ presentation: aortic stenosis
++ signs: aortic stenosis
++ symptoms: aortic stenosis
++ diagnostics: aortic stenosis
++ labs: aortic stenosis
++ imaging: aortic stenosis
++ treatment: aortic stenosis
++ drugs: aortic stenosis
++ surgery: aortic stenosis
++ risk: aortic stenosis
++ pearls: aortic stenosis
++ q: aortic stenosis
++ pics: aortic stenosis
++ pathophys: aortic stenosis
++ systolic or diastolic: aortic stenosis
+- systolic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++ presentation:
++ signs:
++ symptoms:
++ diagnostics:
++ labs:
++ imaging:
++ treatment:
++ drugs:
++ surgery:
++ risk:
++ pearls:
++ q:
++ pics:
++ pathophys:
++ systolic or diastolic:
