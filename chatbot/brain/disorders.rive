@@ -1,3 +1,4 @@
+! local concat = newline
 
 + wilson
 - Wilson disease is an autosomal recessive disorder caused by defective copper metabolism resulting in copper accumulation in the brain, liver, kidneys, and other tissues.  It typically presents with hepatic dysfunction and neuropsychiatric symptoms such as tremor, ataxia, spasticity, masklike facies, difficulty speaking, excessive salvation, psychosis, and personality changes.  Patients may also present with a Coombs negative hemolytic anemia, renal tubular acidosis, or nephrolithiasis.
@@ -21,6 +22,9 @@
 + hit
 - Heparin-induced thrombocytopenia (HIT) is manifested by isolated thrombocytopenia that occurs 5-10 days following the administration of heparin. HIT is an autoimmune phenomenon, and occurs when IgG antibodies are formed towards platelet factor-4.HIT occurs without other coagulation defects or hemolysis. There is no mention of recent heparin exposure in the question stem.
 
++ hit antibody
+- HIT antibody is seen in heparin induced thrombocytopenia. A serotonin release assay is performed to diagnosis HIT.
+
 + itp
 - Idiopathic thrombocytopenic purpura (ITP) is an autoimmune disease that presents with easy bruising, petechial skin lesions, splenomegaly, and isolated thrombocytopenia. There is no coagulation cascade activation or hemolytic anemia in ITP, making this less likely in this scenario.
 - Idiopathic thrombocytopenic purpura (ITP), also known as primary immune thrombocytopenic purpura and autoimmune thrombocytopenic purpura, is defined as isolated thrombocytopenia with normal bone marrow and the absence of other causes of thrombocytopenia. ITP is primarily a disease of increased peripheral platelet destruction, with most patients having antibodies (IgG) to specific platelet membrane glycoproteins. Acute ITP (mostly in children) often follows an acute infection and has a spontaneous resolution within two months. Chronic ITP (mostly adults) persists longer than six months without a specific cause. Isolated thrombocytopenia is the key finding regarding laboratory evaluation. The WBC count and hemoglobin typically are normal, unless severe hemorrhage has occurred. Coagulation studies are normal, and a bleeding time is not useful. The patient in the stem of the question has an isolated thrombocytopenia and there is no history given that would point to another cause of thrombocytopenia (i.e. medications, HIV infection).
@@ -30,6 +34,7 @@
 
 + ttp
 - Thrombotic thrombocytopenic purpura (TTP)/TTP-Hemolytic uremic syndrome (TTP-HUS) is a thrombotic microangiopathy. TTP arises from diffuse endothelial damage or an impairment in the protease ADAMTS13 that is either inherited or acquired. TTP occurs in different clinical settings from DIC. DIC occurs in the setting of trauma or sepsis and TTP is associated with fever in the setting of thrombocytopenia and a microangiopathic hemolytic anemia. In addition, blood coagulation assays in TTP-HUS are normal.
+- Thrombotic thrombocytopenic purpura is a rare but life-threatening disease that must be recognized and treated promptly. TTP causes extensive microscopic clots to form throughout small vessels. The clinical pentad of symptoms includes microangiopathic hemolytic anemia, thrombocytopenia, acute renal failure, fever, and neurological symptoms. As there is no consumption of clotting factors, coagulation studies (i. e. PT, PTT, INR) are normal. ADAMTS13, also known as von Willebrand factor-cleaving protease, degrades large von Willebrand factor multimers and decreases their activity. In TTP, ADAMTS13 is deficient and allows for a more thrombogenic environment.
 
 + dic
 - DIC typically occurs in the setting of sepsis and trauma and is associated with diffuse activation of clotting factors leading to consumptive thrombocytopenia and coagulopathy, which can cause spontaneous hemorrhage.
@@ -69,3 +74,79 @@
 
 + aa most risk
 - African-Americans are at greatest risk for developing sickle-cell disease. Other conditions that are risk factors for African-Americans include glaucoma, type 2 diabetes mellitus, and hypertension.
+
++ q (adam|adamts|adamts13)
+- ADAMTS13, also known as von Willebrand factor-cleaving protease, degrades large von Willebrand factor multimers and decreases their activity. In TTP, ADAMTS13 is deficient and allows for a more thrombogenic environment.
+
++ canca
+- C-ANCA is an autoantibody that targets the neutrophil cytoplasm, most commonly proteinase 3. It is often implicated in Wegener's granulomatosis.
+
++ jak mutation
+- JAK2 mutations have been seen in polycythemia vera, essential thrombocythemia, and myelofibrosis.
+
++ panca
+- P-ANCA most commonly targets myeloperoxidase, a neutrophil granule protein and is implicated in polyarteritis nodosa, ulcerative colitis, primary sclerosing cholangitis, Churg-strauss, among others.
+
++ down quad screen
+- The components of the quad screen are MSAFP, estriol, beta-hCG and inhibin A.
+^ A quad screen is usually offered to pregnant women between weeks 15-20.
+^ It can be used to aid in the diagnosis of congenital syndromes.
+^ MSAFP and estriol are decreased while B-hCG and inhibin A are increased in Down’s syndrome.
+
++ q (osa|obstructive sleep apnea|obstructive apnea)
+- Obstructive sleep apnea is a chronic condition that tends to effect overweight males.  Symptoms include consistent lethargy throughout the day which occurs even if patients get adequate sleep.  Polycythemia is a common finding based on the body's response to lack of oxygenation at night.  Other findings include pulmonary hypertension, congestive heart failure, and cerebral vascular disease.
+
++ sodium normal
+- 135 - 145
+
++ potassium normal
+- 3.0 - 5.0
+
++ q (burkitts|burkitts lymphoma)
+- Burkitt lymphoma, which is a type of non-Hodgkin lymphoma that usually occurs in adolescents or young adults. It may have an association with EBV and is common in AIDS patients. It presents as a jaw lesion in the endemic form, which is common in Africa. The sporadic form is more common in the United States and usually presents as an abdominal or pelvic mass. Biopsy of the mass often reveals sheets of lymphocytes with interspersed macrophages, also described as a starry sky appearance. The translation in Burkitt's lymphoma is t(8;14) c-myc. The c-myc oncogene on chromosome 8 is translated next to the heavy chain Ig gene on chromosome 14. Treatment for Burkitt's lymphoma is rituximab.
+- Sheets of lymphocytes with interspersed macrophages, also described as a starry sky appearance, is associated with Burkitt lymphoma.
+
++ q (rs|rs cells|reed sternberg cells)
+- Giant cells with bilobar nuclei and eosinophilic nucleoli are also known as Reed-Sternberg cells and are associated with Hodgkin’s disease. These cells are necessary but not sufficient for making a diagnosis of HD.
+
++ mm
+- Plasma cells with a fried egg appearance are associated with multiple myeloma.
+- Red blood cells stacked like poker chips are also known as Rouleaux formation and is associated with multiple myeloma.
+
++ alpha error
+- An alpha error (also known as Type 1), is defined as the probability that the null hypothesis is rejected even though it is true. Otherwise referred to as a false-positive.
+
++ beta error
+- A beta error (also known as Type 2), is defined as the probability that the null hypothesis is not rejected even though it is false (false-negative).
+
++ relative risk
+- Relative risk is the risk of the disease in people exposed to a given factor relative to the risk of disease in people unexposed to the same factor. This value is determined through cohort studies.
+
++ power
+- The term power is an estimation of the probability of finding a statistically significant association in a research study when one truly exists. The normal value of power is normally set at 80%, which is calculated by (1 – probability of a beta error). The value “80%” means that if the study “works,” it has an 80% chance of detecting a disease for example and a 20% chance of randomly missing it.
+
++ confidence interval
+- The confidence interval is defined as an interval estimate of a population parameter that is used to indicate the reliability of an estimate. A confidence interval with a certain confidence level is intended to give the assurance that the statistical model is correct.
+
++ incidence
+- Incidence is the total number of new cases of a disease diagnosed in a population in a certain period of time (normally one year). This represents the likelihood of developing that condition in that period of time. For example, when the statement is made that the annual incidence of cancer has increased in years past, the statement means that more individuals have developed this condition each year. It is calculated in the following manner: (# of new cases of a disease in a given time) / (total population at risk for developing the disease).
+
++ standard deviation
+- Standard deviation shows the dispersion of data from the average. A low standard deviation means that the data points tend to be very close to the mean, whereas a high standard deviation indicates that the data points are spread out over a large range of values.
+
++ variance
+- Variance is the measure of how far a set of numbers is spread out. It describes how far the numbers lie from the mean. The variance is a parameter describing in part either the actual probability distribution of an observed population of numbers, or the theoretical probability distribution of a sample of numbers.
+
++ meckel
+- This patient has symptomatic Meckel's diverticulum where oftentimes they will have painless and nonpalpable lower GI bleeding. The reason for the bleeding relates to ectopic gastric mucosa, which can be diagnosed with a 99m technetium pertechnetate scan that has an 85-90% sensitivity and 95% specificity. The rule of twos is the classic description of Meckel's diverticulum. This condition is found in about 2 percent of the population; about two feet from the ileocecal valve and about two inches long. Approximately 2 percent of patients develop a complication over their lifetime, and the male to female ratio is 2:1. Asymptomatic patients are monitored, while symptomatic patients such as this patient are treated with a simple diverticulectomy.
+- 2 feet from ileocecal valve
+- usually 2 inches long
+
++ marjolin ulcer
+- Marjolin’s ulcer is a squamous cell carcinoma arising from a malignant transformation of chronic wounds and is neither prevented nor treated by famotidine. If Marjolin's ulcer is suspected a biopsy should be performed. Treatment is wide excision.
+
++ blastomycosis
+- Blastomycosis is a systemic infection that occurs after the inhalation of the fungus Blastomyces dermatitidis. It is seen in North America, and is most commonly found in the soil of states surrounding the Mississippi and Ohio River basins. It primarily involves the lung, but can have numerous extrapulmonary manifestations, commonly involving the skin as verrucous-like or ulcerated lesions. Lung disease can occur in an acute setting with symptoms that mimic community-acquired pneumonia. It can also develop chronically, and presents similar to malignancy or tuberculosis. Patients may initially be asymptomatic, or may have low-grade fevers, productive cough, hemoptysis, and/or weight loss. Since this infection can mimic that of other disease states, definitive diagnosis requires visualization of the organism on histology or with cultures. Histopathology may reveal yeast 8 to 15 microns in diameter, and is most commonly recognized by the single, broad-based budding. The main treatment of choice is Amphotericin B with the dosage of drug dependent on factors including severity of disease and patient immune status.
+
++ q (bronchogenic|bronchogenic carcinoma|bronchogenic cancer)
+- Bronchogenic carcinoma is a malignancy that arises from lung tissue. The main categories are small cell lung cancer and non-small cell lung cancer. Bronchogenic carcinoma has an insidious onset and usually presents with cough, hemoptysis, weight loss, dyspnea, wheeze, and other symptoms of obstruction of the airway. Chest radiographs and CT imaging can help with finding lung mass, but histological confirmation is necessary. This patient's presentation is similar to that of bronchogenic carcinoma, however the histology shows budding yeast in the sputum diagnostic of blastomycosis.
