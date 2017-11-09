@@ -12,11 +12,11 @@ function setup() {                          //  FORM
 
   let bot = new RiveScript();
   bot.loadFile("brain/diseases.rive", brainReady, brainError);
-  function nucleusReady(){
+  function brainReady(){
     console.log('chatbot ready!')
     bot.sortReplies();
   }
-  function nucleusError(){
+  function brainError(){
     console.log('chatbot error?!')
   }
   let button = select('#send');
