@@ -11,7 +11,7 @@ function setup() {                          //  FORM
   noCanvas();
 
   let bot = new RiveScript();
-  bot.loadFile("nucleus.rive", nucleusReady, nucleusError);
+  bot.loadFile("brain/diseases.rive", brainReady, brainError);
   function nucleusReady(){
     console.log('chatbot ready!')
     bot.sortReplies();
@@ -34,6 +34,7 @@ function setup() {                          //  FORM
   //button = createButton('Key Codes');
   //button.mousePressed(keyCodes);
 }
+/*
 function keyCodes() {
   keyCodeDiv = document.getElementById('keycode');
   if (keyCodeDiv.style.display === "block") {
@@ -46,8 +47,6 @@ function changeStyle(){
   //txt.style("background-color", "pink");
   //txt.style("padding", "24px");
 }
+*/
 
 
-function draw() {                           //  FUNCTION
-
-}
