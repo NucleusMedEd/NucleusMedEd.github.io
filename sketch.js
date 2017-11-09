@@ -11,7 +11,7 @@ function setup() {                          //  FORM
   noCanvas();
 
   let bot = new RiveScript();
-  bot.loadFile("brain/diseases.rive", brainReady, brainError);
+  bot.loadFile("brain/disorders.rive", brainReady, brainError);
   function brainReady(){
     console.log('chatbot ready!')
     bot.sortReplies();
