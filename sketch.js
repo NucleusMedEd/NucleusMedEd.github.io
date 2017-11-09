@@ -9,7 +9,7 @@ $("#user_input").keyup(function(event) {
 function setup() {                          //  FORM
   // put setup code here
   noCanvas();
-
+// attemp infinity
   let bot = new RiveScript();
   bot.loadFile("brain/disorders.rive", brainReady, brainError);
   function brainReady(){
