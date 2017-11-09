@@ -1,66 +1,65 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Cover Template for Bootstrap</title>
+  <title>Chatbot</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery from google -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+  <!-- rivescript -->
+  <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+
+
+  <!-- Custom styles for this template-->
+  <link href="css/chatbot.css" rel="stylesheet">
+
+  <!-- p5js libraries -->
+  <script src="libraries/p5.js"></script>
+  <script src="libraries/p5.dom.js"></script>
+  <script src="libraries/p5.sound.js"></script>
+
+  <!-- program js here -->
+  <script src="sketch.js"></script>
+
+
+
   </head>
 
   <body>
 
-    <div class="site-wrapper">
+    <div class="container-fluid">
 
-      <div class="site-wrapper-inner">
 
-        <div class="cover-container">
 
-          <header class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
-              <nav class="nav nav-masthead">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Contact</a>
-              </nav>
-            </div>
-          </header>
+      <form class="chatbox">
+        <h2 id="title_studybuddy" class="form-signin-heading">Study Buddy</h2>
+        <hr><br>
+        <div class="control">
+          <input type="text" id="user_input" class="form-control" placeholder="What is your question?" required="" autofocus=""></div>
+          <br>
+    	    <div id="reply">
+		        <strong>Reply:</strong> <p id="output"></p>
+          </div>
+        <hr>
 
-          <main role="main" class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-            </p>
-          </main>
+          <button id="send" class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
 
-          <footer class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </footer>
+      </form>
 
-        </div>
 
-      </div>
+    </div> <!-- /container -->
 
-    </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap.min.js"></script>
-  </body>
-</html>
+    <script>
+      document.addEventListener('keypress', function(event) {
+          if (event.keyCode == 13) {
+              event.preventDefault();
+          }
+      });
+    </script>
+</body></html>
