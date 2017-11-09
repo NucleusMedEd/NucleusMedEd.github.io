@@ -1,10 +1,11 @@
 
+/* .   use enter on keypress?? dontknow
 $("#user_input").keyup(function(event) {
   if (event.keyCode === 13) {
       button.mousePressed(chat);
   }
 });
-
+*/
 
 function setup() {                          //  FORM
   // put setup code here
